@@ -10,7 +10,7 @@ pub fn parse_code(code: String) {
     let mut index: usize = 0;
     while index + 1 < lines.len() {
         let line: &str = lines[index];
-        let mut func_args: Vec<String> = split_amount(line, "(", 1);
+        let mut func_args: Vec<String> = split_amount(line, "(", 2);
 
         // Borrow checker
         // Oh borrow checker
