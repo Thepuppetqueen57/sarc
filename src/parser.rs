@@ -43,6 +43,8 @@ pub fn parse_code(code: String) {
                 }
             }
 
+            str_to_print = str_to_print.replace("\"", "");
+
             println!("{}", str_to_print);
         }
 
