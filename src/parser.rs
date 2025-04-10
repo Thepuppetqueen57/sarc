@@ -38,12 +38,10 @@ pub fn parse_code(code: String) {
                     }
                 }
 
-                if reading_str {
+                if reading_str && char != '"' {
                     str_to_print.push(char);
                 }
             }
-
-            str_to_print = str_to_print.replace("\"", "");
 
             println!("{}", str_to_print);
         }
